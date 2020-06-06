@@ -1,0 +1,14 @@
+<h1>{{ data.title }}</h1>
+<h2>{{ data.description }}</h2>
+<p>{{ data.detail }}</p>
+
+<p style="font-weight: bold">Prolly doesn't work coz you're yet to  add your API key</p>
+<label for="lang">Choose Language: </label>
+<select id="lang" [formControl]="lang">
+  <option value="en" selected>English</option>
+  <option value="es">Spanish</option>
+  <option value="de">German </option>
+  <option value="ar">Arabic</option>
+</select>
+
+<button id="translatebtn" (click)="send()">Translate</button>
